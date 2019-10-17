@@ -272,7 +272,6 @@ header {
       background-color: rgba(208,209,204,0.9);
       margin: 3em 0 0 10em;
       border: 1px solid #66CCCC;
-      opacity: 0.9;
     }
     .cotiza2 {
         display: none;
@@ -282,12 +281,11 @@ header {
         top: 0;
         overflow: auto;
         width: 60%;
-        height: 32.5em;
+        height: 34.5em;
     /*    position: absolute;*/
         background-color: rgba(208,209,204,0.9);
         margin: 3em 0 0 15em;
         border: 1px solid #66CCCC;
-        opacity: 0.9;
     }
     .titulos h5 {
        text-transform: uppercase;
