@@ -15,82 +15,27 @@
     <link rel="icon" type="image/gif" href="img/favico.jpg"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection" />
+  </head>
     <body id="inicio">
-      <div id="myCotizacion1" class="cotiza1 titulos">
-        <br>
-        <h5>Ingresa tus datos para más información: </h5>
-        <form action="">
-          <label for="">Nombre completo</label><input type="text" id="nombre_representante" name="nombre_representante" placeholder=""> <br>
-          <label for="">Email</label><input type="email" id="email" name="nit" placeholder=""><br>
-          <label for="">Fecha de nacimiento</label><input type="text" id="edad" name="nit" placeholder=""><br>
-          <label for="">Celular</label><input type="text" id="celular" name="ci" placeholder=""><br>
-          <label for="">Programa de interés</label>
-          <select name="programa" class="browser-default" style="background-color:#fff; border-color:#ccc">
-              <option>-- Seleccionar --</option>
-              <option>Tecnología digital</option>
-              <option>Gastronomía</option>
-              <option>Negocio digital</option>
-          </select>
-          <br>
-
-          <div class="boton-check">
-            <br>
-            <a href="#" class="guardar boton"><i class="material-icons">save</i> Comienza ahora</a>
-            <a href="#" class="close boton"><i class="material-icons">clear</i> Cerrar</a>
-          </div>
-        </form>
-      </div>
-      <div id="myCotizacion2" class="cotiza2 titulos">
-        <br>
-        <h5>Registro de usuarios: </h5>
-        <form action="">
-          <label for="">Nombre completo</label><input type="text" id="nombre_representante" name="nombre_representante" placeholder=""> <br>
-          <label for="">Email</label><input type="email" id="email" name="nit" placeholder=""><br>
-          <label for="">Fecha de nacimiento</label><input type="text" id="edad" name="nit" placeholder=""><br>
-          <label for="">Celular</label><input type="text" id="celular" name="ci" placeholder=""><br>
-          <label for="">Área de trabajo</label>
-          <select name="programa" class="browser-default" style="background-color:#fff; border-color:#ccc">
-              <option>-- Seleccionar --</option>
-              <option>Administración</option>
-              <option>Marketing</option>
-              <option>Docente</option>
-          </select>
-          <br>
-          <label for="">Nivel</label>
-          <select name="programa" class="browser-default" style="background-color:#fff; border-color:#ccc">
-              <option>-- Seleccionar --</option>
-              <option>Nivel 1</option>
-              <option>Nivel 2</option>
-              <option>Nivel 3</option>
-          </select>
-          <br>
-          <div class="boton-check">
-            <br>
-            <a href="#" class="guardar boton"><i class="material-icons">save</i> Guardar</a>
-            <a href="#" class="close1 boton"><i class="material-icons">clear</i> Cerrar</a>
-          </div>
-        </form>
-      </div>
-
     <header>
       <div class="navegador1">
         <nav>
-                <div class="nav-wrapper"style="background-color:#ffffff; border-bottom: 5px solid #66CCCC;">
-                    <div class="">
-                      <a href="#" class="brand-logo"><img src="img/00lmsd001.png" class="resposive-img" width=300 height=55></a>
-                        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons blue-text text-darken-4">menu</i></a>
-                        <ul class="right hide-on-med-and-down">
-                        </ul>
-                        <ul class="side-nav" id="mobile-demo" style="background-color: #66CCCC">
-                          <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#inicio">Inicio</a></li>
-                          <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#mision">¿Quiénes somos?</a></li>
-                          <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#productos">Regístrate</a></li>
-                          <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#aliados">Aliados estratégicos</a></li>
-                          <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#contactos">Contactos</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+          <div class="nav-wrapper"style="background-color:#ffffff; border-bottom: 5px solid #66CCCC;">
+            <div class="">
+              <a href="#" class="brand-logo"><img src="img/00lmsd001.png" class="resposive-img" width=300 height=55></a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons blue-text text-darken-4">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+              </ul>
+              <ul class="side-nav" id="mobile-demo" style="background-color: #66CCCC">
+              <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#inicio">Inicio</a></li>
+              <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#mision">¿Quiénes somos?</a></li>
+              <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#inscribirse">Regístrate</a></li>
+              <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#aliados">Ingresa</a></li>
+              <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#contactos">Contactos</a></li>
+            </ul>
+          </div>
+        </div>
+       </nav>
       </div>
       <div class="navegador">
         <nav class="nav-wrapper" style="background-color:#ffffff;border-bottom: 5px solid #66CCCC;">
@@ -98,21 +43,48 @@
             <ul class="right hide-on-med-and-down" id="menu-principal">
               <li class="inicio1" onclick=""><a class="waves-effect waves-light" style="color:#66CCCC" href="#inicio">Inicio</a></li>
               <li class="mision1"><a class="waves-effect waves-light" style="color:#66CCCC" href="#mision">¿Quiénes somos?</a></li>
-              <li class="productos1"><a class="waves-effect waves-light" style="color:#66CCCC" href="#productos">Regístrate</a></li>
-              <li class="aliados1"><a class="waves-effect waves-light" style="color:#66CCCC" href="#aliados">Aliados estratégicos</a></li>
+              <li class="productos1"><a class="waves-effect waves-light" style="color:#66CCCC" href="#inscribirse">Regístrate</a></li>
+              <li class="aliados1"><a class="waves-effect waves-light" style="color:#66CCCC" href="#">Ingresa</a></li>
               <li class="contactos1"><a class="waves-effect waves-light" style="color:#66CCCC" href="#contactos">Contactos</a></li>
             </ul>
           </nav>
       </div>
     </header>
-    <div class="contenedor">
-      <div id="frase">
+    <div class="">
+      <section>
+        <div id="myCotizacion1" id="inscribirse" class="inscribir titulos flotante">
+          <h5>Ingresa tus datos para más información: </h5>
+          <form action="">
+            <input class="mi_input" type="text" id="nombre_representante" name="nombre_representante" placeholder="Nombre completo"> <br>
+            <input class="mi_input" type="email" id="email" name="nit" placeholder="Email"><br>
+            <input class="mi_input" type="text" id="edad" name="nit" placeholder="Fecha de nacimiento"><br>
+            <input class="mi_input" type="text" id="celular" name="ci" placeholder="Número de celular"><br>
+            <label for="">Programa de interés</label>
+            <select name="programa" class="browser-default" style="background-color:#fff; border-color:#ccc placehoder='programa">
+                <option>-- Seleccionar --</option>
+                <option>Tecnología digital</option>
+                <option>Diseño gráfico</option>
+                <option>Negocio digital</option>
+            </select>
+            <br>
 
-      </div>
-    </div>
-    <div class="contenedor1">
-    </div>
-    <div class="contenedor2">
+            <div class="boton-check">
+              <br>
+              <a href="#" class="guardar boton"><i class="material-icons">save</i> Comienza ahora</a>
+            </div>
+          </form>
+        </div>
+        <div class="contenedor">
+          <div id="frase">
+
+          </div>
+        </div>
+        <div class="contenedor1">
+        </div>
+        <div class="contenedor2">
+        </div>
+
+      </section>
     </div>
   <br>
   <br>
@@ -159,38 +131,40 @@
     <h5 style="color: white">Productos y servicios</h5>
 </div>
 </div>
+<div class="" style="margin: 10px 10px 10px 10px">
+  <section>
+    <div id="myCotizacion2" class="inscribir titulos">
+      <h5>Registro de usuarios: </h5>
+      <form action="">
+        <input type="text" id="nombre_representante" name="nombre_representante" placeholder="Nombre completo">
+        <input type="email" id="email" name="nit" placeholder="Email"><br>
+        <input type="text" id="edad" name="nit" placeholder="Fecha de nacimiento"><br>
+        <input type="text" id="celular" name="ci" placeholder="Número de celular"><br>
+        <label for="">Área de trabajo</label>
+        <select name="programa" class="browser-default" style="background-color:#fff; border-color:#ccc">
+            <option>-- Seleccionar --</option>
+            <option>Administración</option>
+            <option>Marketing</option>
+            <option>Docente</option>
+        </select>
+        <br>
+        <label for="">Nivel</label>
+        <select name="programa" class="browser-default" style="background-color:#fff; border-color:#ccc">
+            <option>-- Seleccionar --</option>
+            <option>Nivel 1</option>
+            <option>Nivel 2</option>
+            <option>Nivel 3</option>
+        </select>
+        <br>
+        <div class="boton-check">
+          <br>
+          <a href="#" class="guardar boton"><i class="material-icons">save</i> Guardar</a>
+        </div>
+      </form>
+    </div>
+  </section>
+</div>
 
-<table style="font-size:16px; color: grey; padding: 25px 25px 25px 25px;">
-  <tr>
-    <p style="width:100%;font-size:16px; color:grey; padding: 25px 25px 25px 25px;" align="justify"> Los servicios y productos prestados se basan en el desarrollo del proceso de nuestro sistema de gestión de innovación tecnológica y de la gestión del conocimiento, aplicados a proyectos empresariales e institucionales. </p>
-  </tr>
-  <tr>
-    <td class="center" style="width:400px;">SERVICIOS</td>
-    <td style="width:400px;">Los servicios desarrollados son:<br>
-      <ol>
-        <li>Servicios del conocimiento</li>
-        <li>Servicios de consultoría IT</li>
-      </ol>
-    </td>
-    <td><img src="img/education.jpg" class="imagenesprod" style="width:200px; height: 200px" alt=""></td>
-    <td>
-      <a class="waves-effect waves-light btn" id="cotizar1" style="background-color:#013F72;">Cotice servicios IT</a>
-    </td>
-  <tr>
-    <td class="center" style="width:400px;">PRODUCTOS</td>
-    <td style="width:400px;">Los productos que desarrollamos son: <br>
-      <ol>
-        <li>Desarrollo de páginas WEB</li>
-        <li>Desarrollo de plataformas WEB</li>
-        <li>Desarrollo de APP</li>
-      </ol>
-    </td>
-    <td><img src="img/vector_mobileapps.jpg" class="imagenesprod" style="width:200px; height:200px" alt=""></td>
-    <td>
-      <a class="waves-effect waves-light btn" id="cotizar2" style="background-color:#013F72;" href="#">Cotice tu sitio web</a>
-    </td>
-  </tr>
-</table>
 <br>
 <br>
 <div class="row" style="background:#66CCCC" id="aliados">

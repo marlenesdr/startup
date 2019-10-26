@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <meta name="description" content="Empresas de innovación digital y desarrollo tecnológico">
+  <meta property="og:image" content="http://startup-bolivia.net/msd-innova/img/favicon.png">
+  <title>IEBT</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_common.css" />
+  <link rel="" href="css/style.css">
+  <link rel="icon" type="image/gif" href="img/favico.jpg"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection" />
+</head>
+<body class="" id="Sucre joven">
+  <div id="contenido">
+  <header>
+    <div class="navegador1">
+      <nav>
+        <div class="nav-wrapper"style="background-color:#ffffff; border-bottom: 5px solid #66CCCC;">
+          <div class="">
+            <a href="#" class="brand-logo"><img src="img/00lmsd001.png" class="resposive-img" width=300 height=55></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons blue-text text-darken-4">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+            </ul>
+            <ul class="side-nav" id="mobile-demo" style="background-color: #66CCCC">
+            <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#inicio">Inicio</a></li>
+            <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#mision">¿Quiénes somos?</a></li>
+            <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#inscribirse">Regístrate</a></li>
+            <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#aliados">Ingresa</a></li>
+            <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#contactos">Contactos</a></li>
+          </ul>
+        </div>
+      </div>
+     </nav>
+    </div>
+    <div class="navegador">
+      <nav class="nav-wrapper" style="background-color:#ffffff;border-bottom: 5px solid #66CCCC;">
+      <a href="#" class="brand-logo"><img src="img/00lmsd001.png" class="resposive-img" width=300 height=55></a>
+          <ul class="right hide-on-med-and-down" id="menu-principal">
+            <li class="inicio1" onclick=""><a class="waves-effect waves-light" style="color:#66CCCC" href="#inicio">Inicio</a></li>
+            <li class="mision1"><a class="waves-effect waves-light" style="color:#66CCCC" href="#mision">¿Quiénes somos?</a></li>
+            <li class="productos1"><a class="waves-effect waves-light" style="color:#66CCCC" href="#inscribirse">Regístrate</a></li>
+            <li class="aliados1"><a class="waves-effect waves-light" style="color:#66CCCC" href="#">Ingresa</a></li>
+            <li class="contactos1"><a class="waves-effect waves-light" style="color:#66CCCC" href="#contactos">Contactos</a></li>
+          </ul>
+        </nav>
+    </div>
+  </header>
+  <div class="">
+    <section>
+      <div id="myCotizacion1" id="inscribirse" class="inscribir titulos flotante">
+        <h5>Ingresa tus datos para más información: </h5>
+        <form action="">
+          <input class="mi_input" type="text" id="nombre_representante" name="nombre_representante" placeholder="Nombre completo"> <br>
+          <input class="mi_input" type="email" id="email" name="nit" placeholder="Email"><br>
+          <input class="mi_input" type="text" id="edad" name="nit" placeholder="Fecha de nacimiento"><br>
+          <input class="mi_input" type="text" id="celular" name="ci" placeholder="Número de celular"><br>
+          <label for="">Programa de interés</label>
+          <select name="programa" class="browser-default" style="background-color:#fff; border-color:#ccc placehoder='programa">
+              <option>-- Seleccionar --</option>
+              <option>Tecnología digital</option>
+              <option>Diseño gráfico</option>
+              <option>Negocio digital</option>
+          </select>
+          <br>
+
+          <div class="boton-check">
+            <br>
+            <a href="#" class="guardar boton"><i class="material-icons">save</i> Comienza ahora</a>
+          </div>
+        </form>
+      </div>
+      <div class="contenedor">
+        <div id="frase">
+
+        </div>
+      </div>
+      <div class="contenedor1">
+      </div>
+      <div class="contenedor2">
+      </div>
+
+    </section>
+  </div>
+<br>
+<br>
+      <br>
+      <div id="portada" style="padding: 15px 15px 15px 15px; background-color:#4D5969">
+            <h6 style="color: white">Portada</h6>
+      </div>
+
+      <div id="contenedor" style="background-color:#4D5969">
+        <div class="row">
+          <div class="col s12">
+            <form name="fportadaimagen1" action="guardaimagenportada.php?imagen=1" method="POST" enctype="multipart/form-data">
+              <img data-u="image" src="imagenes/actividades/001.jpg" class="responsive-img portada-img"/>
+              <label class="uploader" ondragover="return false" >
+                <i class="icon-upload icon" ></i>
+                <img src="" class="">
+                <input type="file" accept="image/*" name="portadaimagen1"  id="portadaimagen1" style="  -webkit-align-items: center;
+                align-items: center;background-color: #eee; display: -webkit-flex;display: flex;-webkit-justify-content: center;
+                justify-content: center;">
+            </label>
+            <script src="FileUploader.js"></script>
+            <script type="text/javascript">
+               new FileUploader('.uploader');
+            </script>
+              <p><input type="submit" value="Guardar imagen1"></p>
+              </form>
+          </div>
+          <div class="col s12">
+            <form name="fportadaimagen2" action="guardaimagenportada.php?imagen=2" method="POST" enctype="multipart/form-data">
+              <img data-u="image" src="imagenes/actividades/002.jpg" class="responsive-img portada-img"/>
+              <label class="uploader" ondragover="return false" >
+                <i class="icon-upload icon" ></i>
+                <img src="" class="">
+                <input type="file" accept="image/*" name="portadaimagen2"  id="portadaimagen2" style="  -webkit-align-items: center;
+                align-items: center;background-color: #eee; display: -webkit-flex;display: flex;-webkit-justify-content: center;
+                justify-content: center;">
+            </label>
+            <script src="FileUploader.js"></script>
+            <script type="text/javascript">
+               new FileUploader('.uploader');
+            </script>
+              <p><input type="submit" value="Guardar imagen2"></p>
+              </form>
+          </div>
+          <div class="col s12">
+            <form name="fportadaimagen3" action="guardaimagenportada.php?imagen=3" method="POST" enctype="multipart/form-data">
+              <img data-u="image" src="imagenes/actividades/003.jpg" class="responsive-img portada-img"/>
+              <label class="uploader" ondragover="return false" >
+                <i class="icon-upload icon" ></i>
+                <img src="" class="">
+                <input type="file" accept="image/*" name="portadaimagen3"  id="portadaimagen3" style="  -webkit-align-items: center;
+                align-items: center;background-color: #eee; display: -webkit-flex;display: flex;-webkit-justify-content: center;
+                justify-content: center;">
+            </label>
+            <script src="FileUploader.js"></script>
+            <script type="text/javascript">
+               new FileUploader('.uploader');
+            </script>
+              <p><input type="submit" value="Guardar imagen3"></p>
+              </form>
+          </div>
+          <div class="col s12">
+            <form name="fportadaimagen4" action="guardaimagenportada.php?imagen=4" method="POST" enctype="multipart/form-data">
+              <img data-u="image" src="imagenes/actividades/004.jpg" class="responsive-img portada-img"/>
+              <label class="uploader" ondragover="return false" >
+                <i class="icon-upload icon" ></i>
+                <img src="" class="">
+                <input type="file" accept="image/*" name="portadaimagen4"  id="portadaimagen4" style="  -webkit-align-items: center;
+                align-items: center;background-color: #eee; display: -webkit-flex;display: flex;-webkit-justify-content: center;
+                justify-content: center;">
+            </label>
+            <script src="FileUploader.js"></script>
+            <script type="text/javascript">
+               new FileUploader('.uploader');
+            </script>
+              <p><input type="submit" value="Guardar imagen4"></p>
+              </form>
+          </div>
+          <div class="col s12">
+            <form name="fportadaimagen5" action="guardaimagenportada.php?imagen=5" method="POST" enctype="multipart/form-data">
+              <img data-u="image" src="imagenes/actividades/005.jpg" class="responsive-img portada-img"/>
+              <label class="uploader" ondragover="return false" >
+                <i class="icon-upload icon" ></i>
+                <img src="" class="">
+                <input type="file" accept="image/*" name="portadaimagen5"  id="portadaimagen5" style="  -webkit-align-items: center;
+                align-items: center;background-color: #eee; display: -webkit-flex;display: flex;-webkit-justify-content: center;
+                justify-content: center;">
+            </label>
+            <script src="FileUploader.js"></script>
+            <script type="text/javascript">
+               new FileUploader('.uploader');
+            </script>
+              <p><input type="submit" value="Guardar imagen5"></p>
+              </form>
+          </div>
+        </div>
+  </div>
+
+  <div id="noticias" style="padding: 5px 5px 5px 5px; background-color:#4D5969">
+    <div class="col l12 m6 s12">
+        <h6 style="color: white">Noticias</h6>
+    </div>
+  </div>
+
+  <div class="row" style="background-color: #ffffff; padding: 10px 10px 5px 10px; border: 1px; border-style: solid; border-color: #cccccc;">
+    <div class="col l6 s6">
+      <a class="waves-effect waves-light btn light-blue lighten-1" href="updateprod/actualizanoticias.php">Actualizar noticias</a>
+    </div>
+  </div>
+
+  <div id="actividades" style="padding: 15px 15px 15px 15px; background-color:#4D5969">
+	| <div class="col l12 m6 s12">
+				<h6 style="color: white">Última historia</h6>
+		</div>
+	</div>
+
+  <div class="row" style="background-color: #ffffff; padding: 10px 10px 5px 10px; border: 1px; border-style: solid; border-color: #cccccc;">
+    <div class="col l6 s6">
+      <a class="waves-effect waves-light btn light-blue lighten-1" href="updateprod/actualizaeventos.php">Actualizar historia</a>
+    </div>
+  </div>
+
+  <div id="cursos" style="padding: 15px 15px 15px 15px; background-color:#4D5969">
+      <div class="col l12 m12 s12">
+          <h6 style="color: white">Cursos</h6>
+      </div>
+  </div>
+
+  <div class="row" style="background-color: #ffffff; padding: 10px 10px 5px 10px; border: 1px; border-style: solid; border-color: #cccccc;">
+    <div class="col l6 s6">
+      <a class="waves-effect waves-light btn light-blue lighten-1" href="updateprod/actualizarcursos.php">Actualizar cursos</a>
+    </div>
+  </div>
+
+  <div id="galeria" style="padding: 15px 15px 15px 15px; background-color:#4D5969">
+      <div class="col l12 m12 s12">
+          <h6 style="color: white">Galería de fotografías</h6>
+      </div>
+  </div>
+  <div class="row" id="portada" style="padding: 15px 15px 15px 15px; background-color:#4D5969">
+    <div class="col s12">
+        <form name="fgaleriaimagen4" action="guardaimagengaleria.php?imagen=4" method="POST" enctype="multipart/form-data">
+          <img data-u="image" src="imagenes/galeria/004.jpg" class="responsive-img portada-img"/>
+          <label class="uploader" ondragover="return false" >
+            <i class="icon-upload icon" ></i>
+            <img src="" class="">
+            <input type="file" accept="image/*" name="galeriaimagen4"  id="galeriaimagen4" style="  -webkit-align-items: center;
+            align-items: center;background-color: #eee; display: -webkit-flex;display: flex;-webkit-justify-content: center;
+            justify-content: center;">
+        </label>
+        <script src="FileUploader.js"></script>
+        <script type="text/javascript">
+           new FileUploader('.uploader');
+        </script>
+          <p><input type="submit" value="Guardar imagen galería 4"></p>
+          </form>
+    </div>
+    <div class="col s12">
+      <form name="fgaleriaimagen5" action="guardaimagengaleria.php?imagen=5" method="POST" enctype="multipart/form-data">
+        <img data-u="image" src="imagenes/galeria/005.jpg" class="responsive-img portada-img"/>
+        <label class="uploader" ondragover="return false" >
+          <i class="icon-upload icon" ></i>
+          <img src="" class="">
+          <input type="file" accept="image/*" name="galeriaimagen5"  id="galeriaimagen5" style="  -webkit-align-items: center;
+          align-items: center;background-color: #eee; display: -webkit-flex;display: flex;-webkit-justify-content: center;
+          justify-content: center;">
+      </label>
+      <script src="FileUploader.js"></script>
+      <script type="text/javascript">
+         new FileUploader('.uploader');
+      </script>
+        <p><input type="submit" value="Guardar imagen galería 5"></p>
+        </form>
+    </div>
+    <div class="col s12">
+      <form name="fgaleriaimagen6" action="guardaimagengaleria.php?imagen=6" method="POST" enctype="multipart/form-data">
+        <img data-u="image" src="imagenes/galeria/006.jpg" class="responsive-img portada-img"/>
+        <label class="uploader" ondragover="return false" >
+          <i class="icon-upload icon" ></i>
+          <img src="" class="">
+          <input type="file" accept="image/*" name="galeriaimagen6"  id="galeriaimagen6" style="  -webkit-align-items: center;
+          align-items: center;background-color: #eee; display: -webkit-flex;display: flex;-webkit-justify-content: center;
+          justify-content: center;">
+      </label>
+      <script src="FileUploader.js"></script>
+      <script type="text/javascript">
+         new FileUploader('.uploader');
+      </script>
+        <p><input type="submit" value="Guardar imagen galería 6"></p>
+        </form>
+    </div>
+    <div class="col s12">
+      <form name="fgaleriaimagen7" action="guardaimagengaleria.php?imagen=7" method="POST" enctype="multipart/form-data">
+        <img data-u="image" src="imagenes/galeria/007.jpg" class="responsive-img portada-img"/>
+        <label class="uploader" ondragover="return false" >
+          <i class="icon-upload icon" ></i>
+          <img src="" class="">
+          <input type="file" accept="image/*" name="galeriaimagen7"  id="galeriaimagen7" style="  -webkit-align-items: center;
+          align-items: center;background-color: #eee; display: -webkit-flex;display: flex;-webkit-justify-content: center;
+          justify-content: center;">
+      </label>
+      <script src="FileUploader.js"></script>
+      <script type="text/javascript">
+         new FileUploader('.uploader');
+      </script>
+        <p><input type="submit" value="Guardar imagen galería 7"></p>
+        </form>
+    </div>
+    <div class="col s12">
+      <form name="fgaleriaimagen8" action="guardaimagengaleria.php?imagen=8" method="POST" enctype="multipart/form-data">
+        <img data-u="image" src="imagenes/galeria/008.jpg" class="responsive-img portada-img"/>
+        <label class="uploader" ondragover="return false" >
+          <i class="icon-upload icon" ></i>
+          <img src="" class="">
+          <input type="file" accept="image/*" name="galeriaimagen8"  id="galeriaimagen8" style="  -webkit-align-items: center;
+          align-items: center;background-color: #eee; display: -webkit-flex;display: flex;-webkit-justify-content: center;
+          justify-content: center;">
+      </label>
+      <script src="FileUploader.js"></script>
+      <script type="text/javascript">
+         new FileUploader('.uploader');
+      </script>
+        <p><input type="submit" value="Guardar imagen galería 8"></p>
+        </form>
+    </div>
+    <div class="col s12">
+      <form name="fgaleriaimagen9" action="guardaimagengaleria.php?imagen=9" method="POST" enctype="multipart/form-data">
+        <img data-u="image" src="imagenes/galeria/009.jpg" class="responsive-img portada-img"/>
+        <label class="uploader" ondragover="return false" >
+          <i class="icon-upload icon" ></i>
+          <img src="" class="">
+          <input type="file" accept="image/*" name="galeriaimagen9"  id="galeriaimagen9" style="  -webkit-align-items: center;
+          align-items: center;background-color: #eee; display: -webkit-flex;display: flex;-webkit-justify-content: center;
+          justify-content: center;">
+      </label>
+      <script src="FileUploader.js"></script>
+      <script type="text/javascript">
+         new FileUploader('.uploader');
+      </script>
+        <p><input type="submit" value="Guardar imagen galería 9"></p>
+        </form>
+    </div>
+    <div class="col s12">
+      <form name="fgaleriaimagen10" action="guardaimagengaleria.php?imagen=10" method="POST" enctype="multipart/form-data">
+        <img data-u="image" src="imagenes/galeria/010.jpg" class="responsive-img portada-img"/>
+        <label class="uploader" ondragover="return false" >
+          <i class="icon-upload icon" ></i>
+          <img src="" class="">
+          <input type="file" accept="image/*" name="galeriaimagen10"  id="galeriaimagen10" style="  -webkit-align-items: center;
+          align-items: center;background-color: #eee; display: -webkit-flex;display: flex;-webkit-justify-content: center;
+          justify-content: center;">
+      </label>
+      <script src="FileUploader.js"></script>
+      <script type="text/javascript">
+         new FileUploader('.uploader');
+      </script>
+        <p><input type="submit" value="Guardar imagen galería 10"></p>
+        </form>
+    </div>
+    <div class="col s12">
+      <form name="fgaleriaimagen11" action="guardaimagengaleria.php?imagen=11" method="POST" enctype="multipart/form-data">
+        <img data-u="image" src="imagenes/galeria/011.jpg" class="responsive-img portada-img"/>
+        <label class="uploader" ondragover="return false" >
+          <i class="icon-upload icon" ></i>
+          <img src="" class="">
+          <input type="file" accept="image/*" name="galeriaimagen11"  id="galeriaimagen11" style="  -webkit-align-items: center;
+          align-items: center;background-color: #eee; display: -webkit-flex;display: flex;-webkit-justify-content: center;
+          justify-content: center;">
+      </label>
+      <script src="FileUploader.js"></script>
+      <script type="text/javascript">
+         new FileUploader('.uploader');
+      </script>
+        <p><input type="submit" value="Guardar imagen galería 11"></p>
+        </form>     </div>
+    <div class="col s12">
+      <form name="fgaleriaimagen12" action="guardaimagengaleria.php?imagen=12" method="POST" enctype="multipart/form-data">
+        <img data-u="image" src="imagenes/galeria/012.jpg" class="responsive-img portada-img"/>
+        <label class="uploader" ondragover="return false" >
+          <i class="icon-upload icon" ></i>
+          <img src="" class="">
+          <input type="file" accept="image/*" name="galeriaimagen12"  id="galeriaimagen12" style="  -webkit-align-items: center;
+          align-items: center;background-color: #eee; display: -webkit-flex;display: flex;-webkit-justify-content: center;
+          justify-content: center;">
+      </label>
+      <script src="FileUploader.js"></script>
+      <script type="text/javascript">
+         new FileUploader('.uploader');
+      </script>
+        <p><input type="submit" value="Guardar imagen galería 12"></p>
+        </form>     </div>
+    <div class="col s12">
+      <form name="fgaleriaimagen13" action="guardaimagengaleria.php?imagen=13" method="POST" enctype="multipart/form-data">
+        <img data-u="image" src="imagenes/galeria/013.jpg" class="responsive-img portada-img"/>
+        <label class="uploader" ondragover="return false" >
+          <i class="icon-upload icon" ></i>
+          <img src="" class="">
+          <input type="file" accept="image/*" name="galeriaimagen13"  id="galeriaimagen13" style="  -webkit-align-items: center;
+          align-items: center;background-color: #eee; display: -webkit-flex;display: flex;-webkit-justify-content: center;
+          justify-content: center;">
+      </label>
+      <script src="FileUploader.js"></script>
+      <script type="text/javascript">
+         new FileUploader('.uploader');
+      </script>
+        <p><input type="submit" value="Guardar imagen galería 13"></p>
+        </form>     </div>
+    <div class="col s12">
+      <form name="fgaleriaimagen14" action="guardaimagengaleria.php?imagen=14" method="POST" enctype="multipart/form-data">
+        <img data-u="image" src="imagenes/galeria/014.jpg" class="responsive-img portada-img"/>
+        <label class="uploader" ondragover="return false" >
+          <i class="icon-upload icon" ></i>
+          <img src="" class="">
+          <input type="file" accept="image/*" name="galeriaimagen14"  id="galeriaimagen14" style="  -webkit-align-items: center;
+          align-items: center;background-color: #eee; display: -webkit-flex;display: flex;-webkit-justify-content: center;
+          justify-content: center;">
+      </label>
+      <script src="FileUploader.js"></script>
+      <script type="text/javascript">
+         new FileUploader('.uploader');
+      </script>
+        <p><input type="submit" value="Guardar imagen galería 14"></p>
+        </form>
+
+  </div>
+    <div class="col s12">
+      <form name="fgaleriaimagen15" action="guardaimagengaleria.php?imagen=15" method="POST" enctype="multipart/form-data">
+        <img data-u="image" src="imagenes/galeria/015.jpg" class="responsive-img portada-img"/>
+        <label class="uploader" ondragover="return false" >
+          <i class="icon-upload icon" ></i>
+          <img src="" class="">
+          <input type="file" accept="image/*" name="galeriaimagen15"  id="galeriaimagen15" style="  -webkit-align-items: center;
+          align-items: center;background-color: #eee; display: -webkit-flex;display: flex;-webkit-justify-content: center;
+          justify-content: center;">
+      </label>
+      <script src="FileUploader.js"></script>
+      <script type="text/javascript">
+         new FileUploader('.uploader');
+      </script>
+        <p><input type="submit" value="Guardar imagen galería 15"></p>
+        </form>
+  </div>
+    <div class="col s12">
+      <form name="fgaleriaimagen16" action="guardaimagengaleria.php?imagen=16" method="POST" enctype="multipart/form-data">
+        <img data-u="image" src="imagenes/galeria/016.jpg" class="responsive-img portada-img"/>
+        <label class="uploader" ondragover="return false" >
+          <i class="icon-upload icon" ></i>
+          <img src="" class="">
+          <input type="file" accept="image/*" name="galeriaimagen16"  id="galeriaimagen16" style="  -webkit-align-items: center;
+          align-items: center;background-color: #eee; display: -webkit-flex;display: flex;-webkit-justify-content: center;
+          justify-content: center;">
+      </label>
+      <script src="FileUploader.js"></script>
+      <script type="text/javascript">
+         new FileUploader('.uploader');
+      </script>
+        <p><input type="submit" value="Guardar imagen galería 16"></p>
+        </form>
+    </div>
+    <div class="col s12">
+      <form name="fgaleriaimagen17" action="guardaimagengaleria.php?imagen=17" method="POST" enctype="multipart/form-data">
+        <img data-u="image" src="imagenes/galeria/017.jpg" class="responsive-img portada-img"/>
+        <label class="uploader" ondragover="return false" >
+          <i class="icon-upload icon" ></i>
+          <img src="" class="">
+          <input type="file" accept="image/*" name="galeriaimagen17"  id="galeriaimagen17" style="  -webkit-align-items: center;
+          align-items: center;background-color: #eee; display: -webkit-flex;display: flex;-webkit-justify-content: center;
+          justify-content: center;">
+      </label>
+      <script src="FileUploader.js"></script>
+      <script type="text/javascript">
+         new FileUploader('.uploader');
+      </script>
+        <p><input type="submit" value="Guardar imagen galería 17"></p>
+        </form>     </div>
+  </div>
+  <footer id="contactos">
+      <div class="flex2">
+        <div id="piepagina" style=" font: oblique bold 90% cursive">
+          <h5 id="pie1" style="">Contactos </h5>
+          <p>
+          info@sucrejoven.com <br>
+          Calle: Lima Pampa #7 <br>
+          Teléfono: (+591) 46433070 </p>
+          <h5 id="pie1" style=" font: oblique bold 90% cursive">Derechos reservados</h5>
+          <p> <a href="http://startup-bolivia.net/msd-innova/" target="_blank">@MSDInnova - 2019</a></p>
+        </div>
+        <div id="piepagina" style=" font: oblique bold 90% cursive">
+        </div>
+        <div id="piepagina" style=" font: oblique bold 90% cursive">
+          <p>Ubicación de la institución: </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4503941045714!2d-65.25656178592422!3d-19.043925216282016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93fbcf37de9265cb%3A0xfc2fd579b7cdf89!2sGAMS%20-%20Direcci%C3%B3n%20Municipal%20de%20la%20Juventud!5e0!3m2!1ses-419!2sbo!4v1567949588936!5m2!1ses-419!2sbo" width="200" height="120" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <br>
+        </div>
+      </div>
+
+    </footer>
+   <script src="js/index.js" type="text/javascript"></script>
+   <script src="js/vendor/jquery.js"></script>
+   <script src="js/vendor/what-input.js"></script>
+   <script src="js/jssor.slider.min.js.descarga" type="text/javascript"></script>
+   <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+   <script src="js/app.js" type="text/javascript"></script>
+   <script src="css/slider.js" type="text/javascript"></script>
+   <script type="text/javascript" scr="css/slider.js">jssor_111_slider_init();</script>
+   <script src="js/jssor.slider.min.js" type="text/javascript"></script>
+   <script type="text/javascript" scr="js/jsSlyder1.js">jssor_b_slider_init();</script>
+   <script type="text/javascript" scr="js/materialize.js"></script>
+   <script type="text/javascript" scr="js/materialize.min.js"></script>
+   <script type="text/javascript" scr="js/modal.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+   <script>$(".button-collapse").sideNav();</script>
+ </div>
+
+ </body>
+</html>
