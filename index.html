@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection" />
   </head>
-    <body id="inicio">
+  <body>
     <header>
       <div class="navegador1">
         <nav>
@@ -29,8 +29,8 @@
               <ul class="side-nav" id="mobile-demo" style="background-color: #66CCCC">
               <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#inicio">Inicio</a></li>
               <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#mision">¿Quiénes somos?</a></li>
-              <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#inscribirse">Regístrate</a></li>
-              <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#aliados">Ingresa</a></li>
+              <li class="mision1"><a class="waves-effect waves-light" style="color:#66CCCC" href="#cursos">Cursos activos</a></li>
+              <li><a class="waves-effect waves-light" style="color:#ffffff;" id="inscribir" href="#miInscripcion">Ingresa</a></li>
               <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#contactos">Contactos</a></li>
             </ul>
           </div>
@@ -43,17 +43,16 @@
             <ul class="right hide-on-med-and-down" id="menu-principal">
               <li class="inicio1" onclick=""><a class="waves-effect waves-light" style="color:#66CCCC" href="#inicio">Inicio</a></li>
               <li class="mision1"><a class="waves-effect waves-light" style="color:#66CCCC" href="#mision">¿Quiénes somos?</a></li>
-              <li class="productos1"><a class="waves-effect waves-light" style="color:#66CCCC" href="#inscribirse">Regístrate</a></li>
-              <li class="aliados1"><a class="waves-effect waves-light" style="color:#66CCCC" href="#">Ingresa</a></li>
+              <li class="mision1"><a class="waves-effect waves-light" style="color:#66CCCC" href="#cursos">Cursos activos</a></li>
+              <li><a class="waves-effect waves-light" style="color:#ffffff; background-color:#66CCCC" id="inscribir" href="#miInscripcion">Registrate</a></li>
               <li class="contactos1"><a class="waves-effect waves-light" style="color:#66CCCC" href="#contactos">Contactos</a></li>
             </ul>
           </nav>
       </div>
     </header>
     <div class="">
-      <section>
-        <div id="myCotizacion1" id="inscribirse" class="inscribir titulos flotante">
-          <h5>Ingresa tus datos para más información: </h5>
+        <div id="miInscripcion" class="inscribir_personal titulos flotante">
+          <h5>Registra tus datos: </h5>
           <form action="">
             <input class="mi_input" type="text" id="nombre_representante" name="nombre_representante" placeholder="Nombre completo"> <br>
             <input class="mi_input" type="email" id="email" name="nit" placeholder="Email"><br>
@@ -83,8 +82,6 @@
         </div>
         <div class="contenedor2">
         </div>
-
-      </section>
     </div>
   <br>
   <br>
@@ -126,43 +123,10 @@
 <br>
 <br>
 
-<div class="row" style="background:#66CCCC" id="productos">
+<div class="row" style="background:#66CCCC" id="cursos">
 <div class="col l12 m6 s12">
     <h5 style="color: white">Productos y servicios</h5>
 </div>
-</div>
-<div class="" style="margin: 10px 10px 10px 10px">
-  <section>
-    <div id="myCotizacion2" class="inscribir titulos">
-      <h5>Registro de usuarios: </h5>
-      <form action="">
-        <input type="text" id="nombre_representante" name="nombre_representante" placeholder="Nombre completo">
-        <input type="email" id="email" name="nit" placeholder="Email"><br>
-        <input type="text" id="edad" name="nit" placeholder="Fecha de nacimiento"><br>
-        <input type="text" id="celular" name="ci" placeholder="Número de celular"><br>
-        <label for="">Área de trabajo</label>
-        <select name="programa" class="browser-default" style="background-color:#fff; border-color:#ccc">
-            <option>-- Seleccionar --</option>
-            <option>Administración</option>
-            <option>Marketing</option>
-            <option>Docente</option>
-        </select>
-        <br>
-        <label for="">Nivel</label>
-        <select name="programa" class="browser-default" style="background-color:#fff; border-color:#ccc">
-            <option>-- Seleccionar --</option>
-            <option>Nivel 1</option>
-            <option>Nivel 2</option>
-            <option>Nivel 3</option>
-        </select>
-        <br>
-        <div class="boton-check">
-          <br>
-          <a href="#" class="guardar boton"><i class="material-icons">save</i> Guardar</a>
-        </div>
-      </form>
-    </div>
-  </section>
 </div>
 
 <br>

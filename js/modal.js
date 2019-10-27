@@ -1,22 +1,21 @@
 // Get the modal
-var modal = document.getElementById('myCotizacion1');
-
-// Get the button that opens the modal
-var btn = document.getElementById("inscribirse");
+var modal1 = document.getElementById('miInscripcion');
+var btn1 = document.getElementById("inscribir");
 //var btn1 = document.getElementById("home1");
 
 // formulario de reservas
-var reservacion =  document.getElementById("myCotizacion2");
-var btn2 = document.getElementById("registrarse");
+var modal2 =  document.getElementById("miRegistro");
+var btn2 = document.getElementById("registrar");
 
 // Get the <span> element that closes the modal
-var cierre1 = document.getElementsByClassName("close")[0];
-var cierre2 = document.getElementsByClassName("close1")[0];
+//var cierre1 = document.getElementsByClassName("close")[0];
+//var cierre2 = document.getElementsByClassName("close1")[0];
 
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";   /* mostrar la información de php*/
+btn1.onclick = function() {
+    modal1.style.display = "block";   /* mostrar la información de php*/
+    modal2.style.display = "none";
 }
 
 /*btn1.onclick = function() {
@@ -25,13 +24,15 @@ btn.onclick = function() {
 
 // cuando se realiza un click en reservas
 btn2.onclick = function() {
-    reservacion.style.display = "block";
+    modal1.style.display = "none";
+    modal2.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-cierre1.onclick = function() {
-    modal.style.display = "none";
+/*cierre1.onclick = function() {
+    modal1.style.display = "none";
 }
 cierre2.onclick = function() {
     reservacion.style.display = "none";
 }
+*/
