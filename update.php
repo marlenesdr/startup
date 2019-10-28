@@ -125,7 +125,11 @@
   <div class="row">
     <div class="col l2">
     </div>
-    <div class='col l8 boton-check center'>
+    <div class='col l4 boton-check center'>
+        <br>
+          <a href="#" class="guardar boton"><i class="material-icons">save</i> Retroceder</a>
+    </div>
+    <div class='col l4 boton-check center'>
         <br>
           <a href="#" class="guardar boton"><i class="material-icons">save</i> Guardar</a>
     </div>
@@ -178,7 +182,11 @@
  <div class="row">
    <div class="col l2">
    </div>
-   <div class='col l8 boton-check center'>
+   <div class='col l4 boton-check center'>
+       <br>
+         <a href="#" class="guardar boton"><i class="material-icons">save</i> Retroceder</a>
+   </div>
+   <div class='col l4 boton-check center'>
        <br>
          <a href="#" class="guardar boton"><i class="material-icons">save</i> Guardar</a>
    </div>
@@ -232,7 +240,11 @@
   <div class="row">
    <div class="col l2">
    </div>
-   <div class='col l8 boton-check center'>
+   <div class='col l4 boton-check center'>
+       <br>
+         <a href="#" class="guardar boton"><i class="material-icons">save</i> Retroceder</a>
+   </div>
+   <div class='col l4 boton-check center'>
        <br>
          <a href="#" class="guardar boton"><i class="material-icons">save</i> Guardar</a>
    </div>
@@ -242,52 +254,133 @@
   <div id="administradores" style="padding: 5px 5px 5px 5px; background-color:#4D5969">
         <h6 style="color: white">Alta a administradores</h6>
   </div>
-  <div class="" style="margin: 10px 10px 10px 10px">
-    <div id="" class="inscribir titulos">
-      <form action="">
-        <label for="">Administrador</label>
-        <select name="programa" class="browser-default" style="background-color:#fff; border-color:#ccc">
-            <option>-- Seleccionar --</option>
-            <option>Xavier Ríos</option>
-            <option>Hugo Menacho</option>
-            <option>Juan Pérez</option>
-        </select>
-        <br>
-        <label for="">Selección de tareas</label>
-            <ol id="selectable1" class="titulos">
-              <li class="ui-widget-content">Item 1</li>
-              <li class="ui-widget-content">Item 2</li>
-              <li class="ui-widget-content">Item 3</li>
-              <li class="ui-widget-content">Item 4</li>
-              <li class="ui-widget-content">Item 5</li>
-              <li class="ui-widget-content">Item 6</li>
-              <li class="ui-widget-content">Item 7</li>
-            </ol>
-            <br>
-            <div class="boton-check">
+      <div class="" style="margin: 10px 10px 10px 10px">
+        <div id="" class=" row inscribir titulos">
+          <form action="">
+            <div class="col l12">
+              <label for="">Administrador</label>
+              <select name="programa" class="browser-default" style="background-color:#fff; border-color:#ccc">
+                  <option>-- Seleccionar --</option>
+                  <option>Xavier Ríos</option>
+                  <option>Hugo Menacho</option>
+                  <option>Juan Pérez</option>
+              </select>
               <br>
-                <a href="#" class="guardar boton"><i class="material-icons">save</i> Guardar</a>
             </div>
-            </form>
+            <div class="col l12">
+               <table class="highlight responsive-table" cellspacing="1" width="500">
+                  <tr>
+                    <thead>
+                      <th width="4%">N°</th>
+                      <th width="46%">Tarea</th>
+                      <th width="10%">Crear registros</th>
+                      <th width="10%">Leer registros</th>
+                      <th width="10%">Actualizar registros</th>
+                      <th width="10%">Borrar registros</th>
+                      <th width="10%">Imprimir</th>
+                    </thead>
+                  </tr>
+                <tbody id="tabla_permisos">
+                  <tr onclick="$('#img1').attr('src','imagenes/personal/001.jpg');">
+                    <td data-label="N°">1.</td>
+                    <td data-label="tarea">Administrar</td>
+                    <td data-label="crear">Si</td>
+                    <td data-label="leer">Si</td>
+                    <td data-label="actualizar">Si</td>
+                    <td data-label="borrar">Si</td>
+                    <td data-label="imprimir">Si</td>
+                  </tr>
+                  <tr onclick="$('#img1').attr('src','imagenes/personal/002.jpg');">
+                    <td data-label="N°">2.</td>
+                    <td data-label="tarea">Programador</td>
+                    <td data-label="crear">Si</td>
+                    <td data-label="leer">Si</td>
+                    <td data-label="actualizar">Si</td>
+                    <td data-label="borrar">No</td>
+                    <td data-label="imprimir">No</td>
+                  </tr>
+                </tbody>
+              </table>
+    <!--          <label for="">Selección de tareas</label>
+                  <ol id="selectable1" class="titulos">
+                    <li class="ui-widget-content">Item 1</li>
+                    <li class="ui-widget-content">Item 2</li>
+                    <li class="ui-widget-content">Item 3</li>
+                    <li class="ui-widget-content">Item 4</li>
+                    <li class="ui-widget-content">Item 5</li>
+                    <li class="ui-widget-content">Item 6</li>
+                    <li class="ui-widget-content">Item 7</li>
+                  </ol>
+                  <br>  -->
           </div>
+          <br>
+          <div class="row">
+            <div class="col l6 boton-check">
+              <br>
+              <a href="#" class="guardar boton"><i class="material-icons">save</i> Retroceder</a>
+            </div>
+            <div class="col l6 boton-check">
+              <br>
+              <a href="#" class="guardar boton"><i class="material-icons">save</i> Guardar</a>
+            </div>
+
+          </div>
+          </form>
+        </div>
       </div>
 
       <div id="docentes" style="padding: 5px 5px 5px 5px; background-color:#4D5969">
             <h6 style="color: white">Alta a docentes</h6>
       </div>
-      <div class="row" style="margin: 10px 10px 10px 10px">
-          <div id="" class="inscribir titulos">
-            <form name="docentes" action="">
-              <label for="">Docente</label>
+      <div class="" style="margin: 10px 10px 10px 10px">
+        <div id="" class=" row inscribir titulos">
+          <form action="">
+            <div class="col l12">
+              <label for="">Administrador</label>
               <select name="programa" class="browser-default" style="background-color:#fff; border-color:#ccc">
                   <option>-- Seleccionar --</option>
-                  <option>Marlene Salinas</option>
-                  <option>Hugo Menacho</option>
                   <option>Xavier Ríos</option>
+                  <option>Hugo Menacho</option>
+                  <option>Juan Pérez</option>
               </select>
               <br>
-              <label for="">Selección de materias</label>
-              <ol id="selectable2" class="titulos">
+            </div>
+            <div class="col l12">
+               <table class="highlight responsive-table" cellspacing="1" width="500">
+                  <tr>
+                    <thead>
+                      <th width="4%">N°</th>
+                      <th width="46%">Tarea</th>
+                      <th width="10%">Crear registros</th>
+                      <th width="10%">Leer registros</th>
+                      <th width="10%">Actualizar registros</th>
+                      <th width="10%">Borrar registros</th>
+                      <th width="10%">Imprimir</th>
+                    </thead>
+                  </tr>
+                <tbody id="tabla_permisos">
+                  <tr onclick="$('#img1').attr('src','imagenes/personal/001.jpg');">
+                    <td data-label="N°">1.</td>
+                    <td data-label="tarea">Administrar</td>
+                    <td data-label="crear">Si</td>
+                    <td data-label="leer">Si</td>
+                    <td data-label="actualizar">Si</td>
+                    <td data-label="borrar">Si</td>
+                    <td data-label="imprimir">Si</td>
+                  </tr>
+                  <tr onclick="$('#img1').attr('src','imagenes/personal/002.jpg');">
+                    <td data-label="N°">2.</td>
+                    <td data-label="tarea">Programador</td>
+                    <td data-label="crear">Si</td>
+                    <td data-label="leer">Si</td>
+                    <td data-label="actualizar">Si</td>
+                    <td data-label="borrar">No</td>
+                    <td data-label="imprimir">No</td>
+                  </tr>
+                </tbody>
+              </table>
+    <!--          <label for="">Selección de tareas</label>
+                  <ol id="selectable1" class="titulos">
                     <li class="ui-widget-content">Item 1</li>
                     <li class="ui-widget-content">Item 2</li>
                     <li class="ui-widget-content">Item 3</li>
@@ -295,32 +388,77 @@
                     <li class="ui-widget-content">Item 5</li>
                     <li class="ui-widget-content">Item 6</li>
                     <li class="ui-widget-content">Item 7</li>
-              </ol>
-              <br>
-              <div class="boton-check">
-                <br>
-                <a href="#" class="guardar boton">Guardar</a>
-              </div>
-            </form>
+                  </ol>
+                  <br>  -->
           </div>
+          <br>
+          <div class="row">
+            <div class="col l6 boton-check">
+              <br>
+              <a href="#" class="guardar boton"><i class="material-icons">save</i> Retroceder</a>
+            </div>
+            <div class="col l6 boton-check">
+              <br>
+              <a href="#" class="guardar boton"><i class="material-icons">save</i> Guardar</a>
+            </div>
+
+          </div>
+          </form>
+        </div>
       </div>
       <br>
       <div id="docentes" style="padding: 5px 5px 5px 5px; background-color:#4D5969">
-            <h6 style="color: white">Alta a docentes</h6>
+            <h6 style="color: white">Alta a alumnos</h6>
       </div>
-      <div class="row" style="margin: 10px 10px 10px 10px">
-          <div id="" class="inscribir titulos">
-            <form name="docentes" action="">
-              <label for="">Docente</label>
+      <div class="" style="margin: 10px 10px 10px 10px">
+        <div id="" class=" row inscribir titulos">
+          <form action="">
+            <div class="col l12">
+              <label for="">Administrador</label>
               <select name="programa" class="browser-default" style="background-color:#fff; border-color:#ccc">
                   <option>-- Seleccionar --</option>
-                  <option>Marlene Salinas</option>
-                  <option>Hugo Menacho</option>
                   <option>Xavier Ríos</option>
+                  <option>Hugo Menacho</option>
+                  <option>Juan Pérez</option>
               </select>
               <br>
-              <label for="">Selección de materias</label>
-              <ol id="selectable3" class="titulos">
+            </div>
+            <div class="col l12">
+               <table class="highlight responsive-table" cellspacing="1" width="500">
+                  <tr>
+                    <thead>
+                      <th width="4%">N°</th>
+                      <th width="46%">Tarea</th>
+                      <th width="10%">Crear registros</th>
+                      <th width="10%">Leer registros</th>
+                      <th width="10%">Actualizar registros</th>
+                      <th width="10%">Borrar registros</th>
+                      <th width="10%">Imprimir</th>
+                    </thead>
+                  </tr>
+                <tbody id="tabla_permisos">
+                  <tr onclick="$('#img1').attr('src','imagenes/personal/001.jpg');">
+                    <td data-label="N°">1.</td>
+                    <td data-label="tarea">Administrar</td>
+                    <td data-label="crear">Si</td>
+                    <td data-label="leer">Si</td>
+                    <td data-label="actualizar">Si</td>
+                    <td data-label="borrar">Si</td>
+                    <td data-label="imprimir">Si</td>
+                  </tr>
+                  <tr onclick="$('#img1').attr('src','imagenes/personal/002.jpg');">
+                    <td data-label="N°">2.</td>
+                    <td data-label="tarea">Programador</td>
+                    <td data-label="crear">Si</td>
+                    <td data-label="leer">Si</td>
+                    <td data-label="actualizar">Si</td>
+                    <td data-label="borrar">No</td>
+                    <td data-label="imprimir">No</td>
+                  </tr>
+                </tbody>
+              </table>
+    <!--          <label for="">Selección de tareas</label>
+                  <ol id="selectable1" class="titulos">
                     <li class="ui-widget-content">Item 1</li>
                     <li class="ui-widget-content">Item 2</li>
                     <li class="ui-widget-content">Item 3</li>
@@ -328,14 +466,23 @@
                     <li class="ui-widget-content">Item 5</li>
                     <li class="ui-widget-content">Item 6</li>
                     <li class="ui-widget-content">Item 7</li>
-              </ol>
-              <br>
-              <div class="boton-check">
-                <br>
-                <a href="#" class="guardar boton">Guardar</a>
-              </div>
-            </form>
+                  </ol>
+                  <br>  -->
           </div>
+          <br>
+          <div class="row">
+            <div class="col l6 boton-check">
+              <br>
+              <a href="#" class="guardar boton"><i class="material-icons">save</i> Retroceder</a>
+            </div>
+            <div class="col l6 boton-check">
+              <br>
+              <a href="#" class="guardar boton"><i class="material-icons">save</i> Guardar</a>
+            </div>
+
+          </div>
+          </form>
+        </div>
       </div>
 
       <br>
