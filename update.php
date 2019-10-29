@@ -48,10 +48,9 @@
             <ul class="right hide-on-med-and-down">
             </ul>
             <ul class="side-nav" id="mobile-demo" style="background-color: #66CCCC">
-            <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#autenticacion">Autenticación de usuarios</a></li>
-            <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#administradores">Alta de administradores</a></li>
-            <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#docentes">Alta a docentes</a></li>
-            <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#tematicas">Gestión de contenidos</a></li>
+            <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#altas">Alta a uauarios</a></li>
+            <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#permisos">Permisos a usuarios</a></li>
+            <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#contenidos">Gestión de contenidos</a></li>
             <li><a class="waves-effect waves-light" style="color:#ffffff;" href="#contactos">Contactos</a></li>
           </ul>
         </div>
@@ -62,10 +61,9 @@
       <nav class="nav-wrapper" style="background-color:#ffffff;border-bottom: 5px solid #66CCCC;">
       <a href="#" class="brand-logo"><img src="img/00lmsd001.png" class="resposive-img" width=300 height=55></a>
           <ul class="right hide-on-med-and-down" id="menu-principal">
-            <li class="inicio1"><a class="waves-effect waves-light" style="color:#66CCCC" href="#autenticacion">Autenticacion de usuarios</a></li>
-            <li><a class="waves-effect waves-light" style="color:#66CCCC" href="#administradores">Alta a administradores</a></li>
-            <li><a class="waves-effect waves-light" style="color:#66CCCC" href="#docentes">Alta a docentes</a></li>
-            <li><a class="waves-effect waves-light" style="color:#66CCCC;" href="#tematicas">Gestión de contenidos</a></li>
+            <li class="inicio1"><a class="waves-effect waves-light" style="color:#66CCCC" href="#altas">Alta a usuarios</a></li>
+            <li><a class="waves-effect waves-light" style="color:#66CCCC" href="#permisos">Permiso a usuarios</a></li>
+            <li><a class="waves-effect waves-light" style="color:#66CCCC;" href="#contenidos">Gestión de contenidos</a></li>
             <li><a class="waves-effect waves-light" style="color:#66CCCC" href="#contactos">Contactos</a></li>
           </ul>
         </nav>
@@ -75,8 +73,8 @@
   <br>
   <br>
   <br>
-  <div id="autenticacion" style="padding: 5px 5px 5px 5px; background-color:#4D5969">
-        <h6 style="color: white">Autenticación de usuarios</h6>
+  <div id="altas" style="padding: 5px 5px 5px 5px; background-color:#4D5969">
+        <h6 style="color: white">Alta a usuarios</h6>
   </div>
   <br>
    <div class="row">
@@ -94,15 +92,27 @@
        <div id="loader"></div><!-- Carga de datos ajax aqui -->
        <div id="resultados"></div><!-- Carga de datos ajax aqui -->
        <div class='outer_div'></div><!-- Carga de datos ajax aqui -->
+      </div>
     </div>
-   </div>
+  </div>
+  <div class="row" style="margin: 10px 10px 10px 10px">
+    <div class="col l12">
+      <label for="">Tipo de usuarios</label>
+      <select name="programa" class="browser-default" style="background-color:#fff; border-color:#ccc">
+          <option>-- Seleccionar --</option>
+          <option>Administradores</option>
+          <option>Gestores de contenido</option>
+          <option>Docentes</option>
+          <option>Alumnos</option>
+      </select>
+      <br>
+    </div>
   </div>
   <div class="row">
     <div class="col-lg-2">
     </div>
     <div class='col-lg-10'>
-      <p>De los registrados, autentica administradores para la plataforma</p>
-      <p>Registrados:</p>
+      <p>Registrados:                   Autenticados:</p>
           <select class="center" id='pre-selected-options1' multiple='multiple' style="width:250px">
             <option value='elem_1' selected>elem 1</option>
             <option value='elem_2'>elem 2</option>
@@ -136,129 +146,26 @@
     <div class="col l2">
     </div>
   </div>
-  <div class="row">
-    <div class="col-lg-5">
-    </div>
-    <div class='col-lg-6 pull-rigth'id="custom-search-input">
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Buscar" id="q" onkeyup="load(1);"/>
-        <span class="input-group-btn">
-          <a class="btn btn-info" type="button" onclick="load(1);">
-            <i class="material-icons">search</i>
-          </a>
-         </span>
-      <div class='clearfix'></div>
-      <div id="loader"></div><!-- Carga de datos ajax aqui -->
-      <div id="resultados"></div><!-- Carga de datos ajax aqui -->
-      <div class='outer_div'></div><!-- Carga de datos ajax aqui -->
-   </div>
-  </div>
- </div>
- <div class="row">
-   <div class="col-lg-2">
-   </div>
-   <div class='col-lg-10'>
-     <p>De los registrados, autentica docentes</p>
-     <p>Registrados:</p>
-         <select class="center" id='pre-selected-options2' multiple='multiple' style="width:250px">
-           <option value='elem_1' selected>elem 1</option>
-           <option value='elem_2'>elem 2</option>
-           <option value='elem_3'>elem 3</option>
-           <option value='elem_4' selected>elem 4</option>
-           <option value='elem_5'>elem 5</option>
-           <option value='elem_6'>elem 6</option>
-           <option value='elem_7'>elem 7</option>
-           <option value='elem_8'>elem 8</option>
-           <option value='elem_9'>elem 9</option>
-           <option value='elem_10'>elem 10</option>
-           <option value='elem_11'>elem 11</option>
-           <option value='elem_12'>elem 12</option>
-           <option value='elem_13'>elem 13</option>
-           <option value='elem_14'>elem 14</option>
-           <option value='elem_15'>elem 15</option>
-         </select>
-   </div>
- </div>
- <div class="row">
-   <div class="col l2">
-   </div>
-   <div class='col l4 boton-check center'>
-       <br>
-         <a href="#" class="guardar boton"><i class="material-icons">save</i> Retroceder</a>
-   </div>
-   <div class='col l4 boton-check center'>
-       <br>
-         <a href="#" class="guardar boton"><i class="material-icons">save</i> Guardar</a>
-   </div>
-   <div class="col l2">
-   </div>
- </div>
   <br>
-  <div class="row">
-    <div class="col-lg-5">
-    </div>
-    <div class='col-lg-6 pull-rigth'id="custom-search-input">
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Buscar" id="q" onkeyup="load(1);"/>
-        <span class="input-group-btn">
-          <a class="btn btn-info" type="button" onclick="load(1);">
-            <i class="material-icons">search</i>
-          </a>
-         </span>
-      <div class='clearfix'></div>
-      <div id="loader"></div><!-- Carga de datos ajax aqui -->
-      <div id="resultados"></div><!-- Carga de datos ajax aqui -->
-      <div class='outer_div'></div><!-- Carga de datos ajax aqui -->
-   </div>
-  </div>
- </div>
- <div class="row">
-   <div class="col-lg-2">
-   </div>
-   <div class='col-lg-10'>
-     <p>De los registrados, autentica alumnos</p>
-     <p>Registrados:</p>
-         <select class="center" id='pre-selected-options3' multiple='multiple' style="width:250px">
-           <option value='elem_1' selected>elem 1</option>
-           <option value='elem_2'>elem 2</option>
-           <option value='elem_3'>elem 3</option>
-           <option value='elem_4' selected>elem 4</option>
-           <option value='elem_5'>elem 5</option>
-           <option value='elem_6'>elem 6</option>
-           <option value='elem_7'>elem 7</option>
-           <option value='elem_8'>elem 8</option>
-           <option value='elem_9'>elem 9</option>
-           <option value='elem_10'>elem 10</option>
-           <option value='elem_11'>elem 11</option>
-           <option value='elem_12'>elem 12</option>
-           <option value='elem_13'>elem 13</option>
-           <option value='elem_14'>elem 14</option>
-           <option value='elem_15'>elem 15</option>
-         </select>
-   </div>
-  </div>
-  <div class="row">
-   <div class="col l2">
-   </div>
-   <div class='col l4 boton-check center'>
-       <br>
-         <a href="#" class="guardar boton"><i class="material-icons">save</i> Retroceder</a>
-   </div>
-   <div class='col l4 boton-check center'>
-       <br>
-         <a href="#" class="guardar boton"><i class="material-icons">save</i> Guardar</a>
-   </div>
-   <div class="col l2">
-   </div>
-  </div>
   <div id="administradores" style="padding: 5px 5px 5px 5px; background-color:#4D5969">
-        <h6 style="color: white">Alta a administradores</h6>
+        <h6 style="color: white">Permisos a usuarios</h6>
   </div>
-      <div class="" style="margin: 10px 10px 10px 10px">
+  <div class="row" style="margin: 10px 10px 10px 10px">
+    <label for="">Tipos de usuarios</label>
+    <select name="programa" class="browser-default" style="background-color:#fff; border-color:#ccc">
+        <option>-- Seleccionar --</option>
+        <option>Administrativos</option>
+        <option>Gestores de cotenidos</option>
+        <option>Docentes</option>
+        <option>Alumnos</option>
+    </select>
+    <br>
+  </div>
+  <div class="" style="margin: 10px 10px 10px 10px">
         <div id="" class=" row inscribir titulos">
           <form action="">
             <div class="col l12">
-              <label for="">Administrador</label>
+              <label for="">Nombre:</label>
               <select name="programa" class="browser-default" style="background-color:#fff; border-color:#ccc">
                   <option>-- Seleccionar --</option>
                   <option>Xavier Ríos</option>
@@ -328,163 +235,6 @@
           </form>
         </div>
       </div>
-
-      <div id="docentes" style="padding: 5px 5px 5px 5px; background-color:#4D5969">
-            <h6 style="color: white">Alta a docentes</h6>
-      </div>
-      <div class="" style="margin: 10px 10px 10px 10px">
-        <div id="" class=" row inscribir titulos">
-          <form action="">
-            <div class="col l12">
-              <label for="">Administrador</label>
-              <select name="programa" class="browser-default" style="background-color:#fff; border-color:#ccc">
-                  <option>-- Seleccionar --</option>
-                  <option>Xavier Ríos</option>
-                  <option>Hugo Menacho</option>
-                  <option>Juan Pérez</option>
-              </select>
-              <br>
-            </div>
-            <div class="col l12">
-               <table class="highlight responsive-table" cellspacing="1" width="500">
-                  <tr>
-                    <thead>
-                      <th width="4%">N°</th>
-                      <th width="46%">Tarea</th>
-                      <th width="10%">Crear registros</th>
-                      <th width="10%">Leer registros</th>
-                      <th width="10%">Actualizar registros</th>
-                      <th width="10%">Borrar registros</th>
-                      <th width="10%">Imprimir</th>
-                    </thead>
-                  </tr>
-                <tbody id="tabla_permisos">
-                  <tr onclick="$('#img1').attr('src','imagenes/personal/001.jpg');">
-                    <td data-label="N°">1.</td>
-                    <td data-label="tarea">Administrar</td>
-                    <td data-label="crear">Si</td>
-                    <td data-label="leer">Si</td>
-                    <td data-label="actualizar">Si</td>
-                    <td data-label="borrar">Si</td>
-                    <td data-label="imprimir">Si</td>
-                  </tr>
-                  <tr onclick="$('#img1').attr('src','imagenes/personal/002.jpg');">
-                    <td data-label="N°">2.</td>
-                    <td data-label="tarea">Programador</td>
-                    <td data-label="crear">Si</td>
-                    <td data-label="leer">Si</td>
-                    <td data-label="actualizar">Si</td>
-                    <td data-label="borrar">No</td>
-                    <td data-label="imprimir">No</td>
-                  </tr>
-                </tbody>
-              </table>
-    <!--          <label for="">Selección de tareas</label>
-                  <ol id="selectable1" class="titulos">
-                    <li class="ui-widget-content">Item 1</li>
-                    <li class="ui-widget-content">Item 2</li>
-                    <li class="ui-widget-content">Item 3</li>
-                    <li class="ui-widget-content">Item 4</li>
-                    <li class="ui-widget-content">Item 5</li>
-                    <li class="ui-widget-content">Item 6</li>
-                    <li class="ui-widget-content">Item 7</li>
-                  </ol>
-                  <br>  -->
-          </div>
-          <br>
-          <div class="row">
-            <div class="col l6 boton-check">
-              <br>
-              <a href="#" class="guardar boton"><i class="material-icons">save</i> Retroceder</a>
-            </div>
-            <div class="col l6 boton-check">
-              <br>
-              <a href="#" class="guardar boton"><i class="material-icons">save</i> Guardar</a>
-            </div>
-
-          </div>
-          </form>
-        </div>
-      </div>
-      <br>
-      <div id="docentes" style="padding: 5px 5px 5px 5px; background-color:#4D5969">
-            <h6 style="color: white">Alta a alumnos</h6>
-      </div>
-      <div class="" style="margin: 10px 10px 10px 10px">
-        <div id="" class=" row inscribir titulos">
-          <form action="">
-            <div class="col l12">
-              <label for="">Administrador</label>
-              <select name="programa" class="browser-default" style="background-color:#fff; border-color:#ccc">
-                  <option>-- Seleccionar --</option>
-                  <option>Xavier Ríos</option>
-                  <option>Hugo Menacho</option>
-                  <option>Juan Pérez</option>
-              </select>
-              <br>
-            </div>
-            <div class="col l12">
-               <table class="highlight responsive-table" cellspacing="1" width="500">
-                  <tr>
-                    <thead>
-                      <th width="4%">N°</th>
-                      <th width="46%">Tarea</th>
-                      <th width="10%">Crear registros</th>
-                      <th width="10%">Leer registros</th>
-                      <th width="10%">Actualizar registros</th>
-                      <th width="10%">Borrar registros</th>
-                      <th width="10%">Imprimir</th>
-                    </thead>
-                  </tr>
-                <tbody id="tabla_permisos">
-                  <tr onclick="$('#img1').attr('src','imagenes/personal/001.jpg');">
-                    <td data-label="N°">1.</td>
-                    <td data-label="tarea">Administrar</td>
-                    <td data-label="crear">Si</td>
-                    <td data-label="leer">Si</td>
-                    <td data-label="actualizar">Si</td>
-                    <td data-label="borrar">Si</td>
-                    <td data-label="imprimir">Si</td>
-                  </tr>
-                  <tr onclick="$('#img1').attr('src','imagenes/personal/002.jpg');">
-                    <td data-label="N°">2.</td>
-                    <td data-label="tarea">Programador</td>
-                    <td data-label="crear">Si</td>
-                    <td data-label="leer">Si</td>
-                    <td data-label="actualizar">Si</td>
-                    <td data-label="borrar">No</td>
-                    <td data-label="imprimir">No</td>
-                  </tr>
-                </tbody>
-              </table>
-    <!--          <label for="">Selección de tareas</label>
-                  <ol id="selectable1" class="titulos">
-                    <li class="ui-widget-content">Item 1</li>
-                    <li class="ui-widget-content">Item 2</li>
-                    <li class="ui-widget-content">Item 3</li>
-                    <li class="ui-widget-content">Item 4</li>
-                    <li class="ui-widget-content">Item 5</li>
-                    <li class="ui-widget-content">Item 6</li>
-                    <li class="ui-widget-content">Item 7</li>
-                  </ol>
-                  <br>  -->
-          </div>
-          <br>
-          <div class="row">
-            <div class="col l6 boton-check">
-              <br>
-              <a href="#" class="guardar boton"><i class="material-icons">save</i> Retroceder</a>
-            </div>
-            <div class="col l6 boton-check">
-              <br>
-              <a href="#" class="guardar boton"><i class="material-icons">save</i> Guardar</a>
-            </div>
-
-          </div>
-          </form>
-        </div>
-      </div>
-
       <br>
       <div id="tematicas" style="padding: 5px 5px 5px 5px; background-color:#4D5969">
         <div class="col l12 m6 s12">
